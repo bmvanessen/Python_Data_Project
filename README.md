@@ -39,3 +39,67 @@ plt.show()
 
 - Python is a versatile skill, highly demanded across all three roles, but most prominently for Data Scientists (64%)
 - SQL is the most requested skill for Data Analysts (50%)
+
+## 2. How are in-demand skills trending for Data Analysts?
+
+### Visualize Data
+```python
+sns.lineplot(data=df_plot, dashes=False, palette="tab10")
+sns.set_theme(style="ticks")
+sns.despine()
+plt.title("Trending Top Skills for Data Analysts in the Netherlands")
+plt.ylabel("Likelihood in Job Posting")
+plt.xlabel("2023")
+plt.legend().remove()
+
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+from adjustText import adjust_text
+texts = []
+for i in range(5):
+    texts.append(
+        plt.text(
+            11.2,                       
+            df_plot.iloc[-1, i],        
+            df_plot.columns[i]
+        )
+    )
+
+adjust_text(
+    texts,
+    arrowprops=dict(
+        arrowstyle="-",
+        color="gray",
+        lw=0.8
+    ),
+    expand_points=(2, 2),
+    expand_text=(2, 2),
+    force_text=0.8,
+    force_points=0.8
+)
+
+plt.show()
+```
+
+### Results
+
+![Trending Top Skills for Data Analysts in the Netherlands](3_Project\images\trending_skills.png)
+*Line graph vizualizing the trending top skills for data analysts in 2023.*
+
+### Insights
+
+The analysis of Data Analyst job postings in the Netherlands reveals several key trends in the most requested skills throughout 2023:
+
+- **SQL remains the most in-demand skill**: SQL consistently appears as the leading requirement, with around 50–60% of job postings mentioning this skill. This highlights the importance of database querying and data extraction capabilities for Data Analyst roles.
+
+- **Python shows strong and stable demand**: Python is the second most requested skill, appearing in approximately 35–45% of job postings. Its popularity reflects the growing need for data automation, analysis, and advanced analytics.
+
+- **Business Intelligence tools are increasingly relevant**: Power BI shows a steady presence in job postings, indicating the importance of data visualization and dashboarding skills for translating data into business insights.
+
+- **Excel remains an essential skill**: Despite the growth of programming and BI tools, Excel continues to be frequently requested, demonstrating its ongoing relevance in reporting, analysis, and business operations.
+
+- **The demand for technical skills fluctuates throughout the year**: While SQL and Python maintain a consistently high level of demand, other skills show more variation across months. This suggests that companies have changing priorities depending on hiring periods and business needs.
+
+Overall, the findings indicate that a strong Data Analyst profile in the Netherlands combines **SQL, Python, BI visualization tools (such as Power BI), and Excel skills**. Developing a balanced skill set across these areas can improve competitiveness in the Dutch data analytics job market.
