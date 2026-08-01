@@ -5,7 +5,7 @@
 To find the most demanded skills for the top 3 most popular data roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 3 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I am targetting.
 
 View my notebook with detailed steps here:
-[2_Skill_Count.ipynb](3_Project\2_Skills_Count.ipynb)
+[2_Skill_Count.ipynb](3_Project/2_Skills_Count.ipynb)
 
 ### Visualize Data
 
@@ -33,7 +33,7 @@ plt.show()
 ```
 ### Results
 
-![Visualization of Top Skills for Data Roles](3_Project\images\skill_demand_all_data_roles.png)
+![Visualization of Top Skills for Data Roles](3_Project/images/skill_demand_all_data_roles.png)
 
 ### Insights
 
@@ -85,7 +85,7 @@ plt.show()
 
 ### Results
 
-![Trending Top Skills for Data Analysts in the Netherlands](3_Project\images\trending_skills.png)
+![Trending Top Skills for Data Analysts in the Netherlands](3_Project/images/trending_skills.png)
 *Line graph vizualizing the trending top skills for data analysts in 2023.*
 
 ### Insights
@@ -124,7 +124,7 @@ plt.show()
 ```
 
 #### Results
-![Salary Distribution in the Netherlands](3_Project\images\salary_distribution_skills.png)
+![Salary Distribution in the Netherlands](3_Project/images/salary_distribution_skills.png)
 *Boxplot vizualizing the salary distribution for the top 6 most popular data roles in the Netherlands.*
 
 #### Insights
@@ -169,7 +169,7 @@ plt.show()
 ```
 
 #### Results
-![The Highest Paid & Most Demanded Skills for Data Analysts in the Netherlands](3_Project\images\Highest_paid_most_demand_skills.png)
+![The Highest Paid & Most Demanded Skills for Data Analysts in the Netherlands](3_Project/images/Highest_paid_most_demand_skills.png)
 *Barplot vizualizing the highest paid and most demanded skills for data analysts in the Netherlands.*
 
 #### Insights
@@ -219,7 +219,7 @@ plt.show()
 ```
 
 ### Results
-![Most Optimal Skills for Data Analysts in the Netherlands](3_Project\images\scatterplot_optimal_skills.png)
+![Most Optimal Skills for Data Analysts in the Netherlands](3_Project/images/scatterplot_optimal_skills.png)
 
 #### Insights
 
